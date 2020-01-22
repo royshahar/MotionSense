@@ -1,0 +1,49 @@
+﻿<Window x:Class="MotionSense.NoCameraPopUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MotionSense"
+        mc:Ignorable="d"
+        Title="NoCameraPopUp" Height="120" Width="250" WindowStyle="None" BorderBrush="Black" BorderThickness="2" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="MyButton" TargetType="Button">
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                            BorderThickness="2"
+                            Padding="4,2" 
+                            BorderBrush="DarkGray" 
+                            CornerRadius="3" 
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="Black" />
+                                <Setter TargetName="border" Property="Background" Value="LightGray" />
+                                <Setter TargetName="border" Property="BorderThickness" Value="1" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Name="DynamicGrid" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFFF" MinHeight="100" MinWidth="250">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="45"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#EEEEEE">
+            <Label Name="Topic" Content="Unable to " HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Medium" FontSize="15" />
+        </Grid>
+        <Grid Grid.Row="2" Background="#EEEEEE" Height="40" VerticalAlignment="Top">
+            <Button Content="OK" Width="80" Height="25" Click="OK_Button_Click" VerticalAlignment="Center" Style="{StaticResource MyButton}" />
+        </Grid>
+    </Grid>
+
+</Window>

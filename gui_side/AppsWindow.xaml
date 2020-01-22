@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="MotionSense.AppsWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MotionSense"
+             mc:Ignorable="d" 
+             d:DesignHeight="609" d:DesignWidth="849">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4.4*"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Page 1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26"/>
+        <Border Grid.Row="1" Background="{StaticResource SeparatorColor}" />
+        <Grid Grid.Row="2" Background="#FF137C7C">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="To add new application press +" Grid.Row="1" FontSize="18" VerticalAlignment="Center" Margin="20,0,0,0"/>
+            <TextBlock Text="To edit appliaction's definitions press the appllication icon" Grid.Row="2" FontSize="18" VerticalAlignment="Bottom" Margin="20,0,0,0"/>
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <ListView x:Name="IconListView" Grid.Row="1" Background="#353F5A" BorderThickness="0" SelectionChanged="SuggestedPressed" >
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="5" HorizontalAlignment="Stretch" VerticalAlignment="Top" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Name="border" Background="#353F5A" CornerRadius="6">
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Center" Width="160" Height="160">
+                                <Button Name="trashIcon" Style="{StaticResource TrashButtonStyle}" Visibility="Collapsed" HorizontalAlignment="Right" VerticalAlignment="Top" Height="16" Width="16" Margin="0,14,14,0" Click="DeleteDefinition" Tag="{Binding appName}"/>
+                                <Image Name="borderIcon" Source="{Binding iconImg}" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70" Width="70" Margin="0,32,0,0"/>
+                                <TextBlock Text="{Binding appName}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,18,0,0" Foreground="LightGray" FontWeight="Medium" FontSize="18"/>
+                            </StackPanel>
+                        </Border>
+                        <DataTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#222D41" />
+                                <Setter TargetName="borderIcon" Property="Margin" Value="0,2,0,0" />
+                                <Setter TargetName="trashIcon" Property="Visibility" Value="Visible" />
+                                <Setter Property="Cursor" Value="Hand" />
+                            </Trigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Height" Value="160"/>
+                        <Setter Property="Width" Value="160"/>
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                    <ContentPresenter />
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
+        </Grid>
+
+        <!--<TextBlock Name="noDefinitions" Grid.Row="0" Text="No Apps Defined Yet" FontSize="28" FontWeight="Medium" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFF9F9F9" />-->
+        
+    </Grid>
+</UserControl>

@@ -1,0 +1,95 @@
+﻿<Window x:Class="MotionSense.DefineWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MotionSense"
+        mc:Ignorable="d"
+        Icon="{StaticResource iconImgSrc}"
+        BorderThickness="2" BorderBrush="#FF23233C"
+        WindowStartupLocation="CenterScreen"
+        Title="MotionSense" Height="700" Width="1200" AllowsTransparency="True" WindowStyle="None" MouseMove="Window_MouseMove">
+
+    <Grid Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Border Name="titleBar" Grid.Row="0" Background="#2C364F"/>
+        <Border Grid.Row="1" Background="#FF23233C" />
+        <Border Grid.Row="2" Background="#353F5A" />
+        <Button Name="exitBtn" Style="{StaticResource exit}" Grid.Row="0" Content="x" Width="50" HorizontalAlignment="Right" FontSize="24" BorderBrush="{x:Null}" Click="CloseButton_Click" Cursor="Hand"/>
+        <Button Name="minBtn" Style="{StaticResource min}" FontWeight="ExtraBold" Grid.Row="0" Content="__" Width="50" HorizontalAlignment="Right" FontSize="16" BorderBrush="{x:Null}" Click="MinimizeButton_Click" Margin="0,0,50,0" Cursor="Hand"/>
+        <Image Name="iconImg" Source="{StaticResource iconImgSrc}" Grid.Row="0" HorizontalAlignment="Left" Height="40" Width="45" Margin="2,0,0,0" Stretch="Fill"/>
+        <TextBlock Name="title" Grid.Row="0" FontWeight="Bold" Margin="60,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="LightGray" FontSize="20" Width="140">MotionSense</TextBlock>
+
+        <StackPanel Name="defineHeadline" Grid.Row="2" Orientation="Horizontal" Height="80" VerticalAlignment="Top" Width="200" HorizontalAlignment="Center" Margin="0,20,20,0">
+            <Image Name="iconDefineImg" Height="55" Width="55"/>
+            <TextBlock Name="appDefineName" Text="Hello" VerticalAlignment="Center" FontSize="36" Foreground="White" FontWeight="Medium" Margin="20,0,0,0"/>
+        </StackPanel>
+
+        <Button x:Name="Swiping_Left" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="50,125,0,0" Grid.Row="2"/>
+        <Button x:Name="Swiping_Right" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="50,175,0,0" Grid.Row="2"/>
+        <Button x:Name="Swiping_Down" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="50,225,0,0" Grid.Row="2"/>
+        <Button x:Name="Swiping_Up" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="50,275,0,0" Grid.Row="2"/>
+        <Button x:Name="Pushing_Hand_Away" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="50,325,0,0" Grid.Row="2"/>
+        <Button x:Name="Pulling_Hand_In" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="50,375,0,0" Grid.Row="2"/>
+        <Button x:Name="Sliding_Two_Fingers_Left" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="50,425,0,0" Grid.Row="2"/>
+        <Button x:Name="Sliding_Two_Fingers_Right" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="50,475,0,0" Grid.Row="2"/>
+        <Button x:Name="Sliding_Two_Fingers_Down" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="50,525,0,0" Grid.Row="2"/>
+
+        <TextBlock Name="text" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="140" Height="30" Margin="140,128,0,0" Grid.Row="2">Swiping Left</TextBlock>
+        <TextBlock x:Name="text_Copy" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="140" Height="30" Margin="140,178,0,0" Grid.Row="2"><Run Text="Swiping Right"/></TextBlock>
+        <TextBlock x:Name="text_Copy1" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="270" Height="30" Margin="140,228,0,0" Grid.Row="2"><Run Text="Swiping Down"/></TextBlock>
+        <TextBlock x:Name="text_Copy2" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="270" Height="30" Margin="140,278,0,0" Grid.Row="2"><Run Text="Swiping Up"/></TextBlock>
+        <TextBlock x:Name="text_Copy3" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="270" Height="30" Margin="140,328,0,0" Grid.Row="2"><Run Text="Pushing Hand Away"/></TextBlock>
+        <TextBlock x:Name="text_Copy4" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="270" Height="30" Margin="140,378,0,0" Grid.Row="2"><Run Text="Pulling Hand In"/></TextBlock>
+        <TextBlock x:Name="text_Copy5" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="270" Height="30" Margin="140,428,0,0" Grid.Row="2"><Run Text="Sliding Two Fingers Left"/></TextBlock>
+        <TextBlock x:Name="text_Copy6" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="270" Height="30" Margin="140,478,0,0" Grid.Row="2"><Run Text="Sliding Two Fingers Right"/></TextBlock>
+        <TextBlock x:Name="text_Copy7" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="270" Height="30" Margin="140,528,0,0" Grid.Row="2"><Run Text="Sliding Two Fingers Down"/></TextBlock>
+
+        <Button x:Name="Sliding_Two_Fingers_Up" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="410,150,0,0" Grid.Row="2"/>
+        <Button x:Name="Pushing_Two_Fingers_Away" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="410,200,0,0" Grid.Row="2"/>
+        <Button x:Name="Pulling_Two_Fingers_In" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="410,250,0,0" Grid.Row="2"/>
+        <Button x:Name="Rolling_Hand_Forward" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="410,300,0,0" Grid.Row="2"/>
+        <Button x:Name="Rolling_Hand_Backward" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="410,350,0,0" Grid.Row="2"/>
+        <Button x:Name="Turning_Hand_Clockwise" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="410,400,0,0" Grid.Row="2"/>
+        <Button x:Name="Turning_Hand_Counterclockwise" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="410,450,0,0" Grid.Row="2"/>
+        <Button x:Name="Zooming_In_With_Full_Hand" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="410,500,0,0" Grid.Row="2"/>
+
+        <TextBlock x:Name="text_Copy8" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="500,152,0,0" Grid.Row="2"><Run Text="Sliding Two Fingers Up"/></TextBlock>
+        <TextBlock x:Name="text_Copy9" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="500,202,0,0" Grid.Row="2"><Run Text="Pushing Two Fingers Away"/></TextBlock>
+        <TextBlock x:Name="text_Copy10" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="500,252,0,0" Grid.Row="2"><Run Text="Pulling Two Fingers In"/></TextBlock>
+        <TextBlock x:Name="text_Copy11" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="500,302,0,0" Grid.Row="2"><Run Text="Rolling Hand Forward"/></TextBlock>
+        <TextBlock x:Name="text_Copy12" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="500,352,0,0" Grid.Row="2"><Run Text="Rolling Hand Backward"/></TextBlock>
+        <TextBlock x:Name="text_Copy13" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="500,402,0,0" Grid.Row="2"><Run Text="Turning Hand Clockwise"/></TextBlock>
+        <TextBlock x:Name="text_Copy14" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="500,452,0,0" Grid.Row="2"><Run Text="Turning Hand Counterclockwise"/></TextBlock>
+        <TextBlock x:Name="text_Copy15" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="500,502,0,0" Grid.Row="2"><Run Text="Zooming In With Full Hand"/></TextBlock>
+
+
+        <Button x:Name="Zooming_Out_With_Full_Hand" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="770,150,0,0" Grid.Row="2"/>
+        <Button x:Name="Zooming_In_With_Two_Fingers" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="770,200,0,0" Grid.Row="2"/>
+        <Button x:Name="Zooming_Out_With_Two_Fingers" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="770,250,0,0" Grid.Row="2"/>
+        <Button x:Name="Thumb_Up" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="770,300,0,0" Grid.Row="2"/>
+        <Button x:Name="Thumb_Down" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="770,350,0,0" Grid.Row="2"/>
+        <Button x:Name="Shaking_Hand" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="770,400,0,0" Grid.Row="2"/>
+        <Button x:Name="Stop_Sign" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="770,450,0,0" Grid.Row="2"/>
+        <Button x:Name="Drumming_Fingers" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Height="30" Margin="770,500,0,0" Grid.Row="2"/>
+
+        <TextBlock x:Name="text_Copy16" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="860,152,0,0" Grid.Row="2"><Run Text="Zooming Out With Full Hand"/></TextBlock>
+        <TextBlock x:Name="text_Copy17" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="860,202,0,0" Grid.Row="2"><Run Text="Zooming In With Two Fingers"/></TextBlock>
+        <TextBlock x:Name="text_Copy18" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="860,252,0,0" Grid.Row="2"><Run Text="Zooming Out With Two Fingers"/></TextBlock>
+        <TextBlock x:Name="text_Copy19" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="860,302,0,0" Grid.Row="2"><Run Text="Thumb Up"/></TextBlock>
+        <TextBlock x:Name="text_Copy20" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="860,352,0,0" Grid.Row="2"><Run Text="Thumb Down"/></TextBlock>
+        <TextBlock x:Name="text_Copy21" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="860,402,0,0" Grid.Row="2"><Run Text="Shaking Hand"/></TextBlock>
+        <TextBlock x:Name="text_Copy22" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="860,452,0,0" Grid.Row="2"><Run Text="Stop Sign"/></TextBlock>
+        <TextBlock x:Name="text_Copy23" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="LightGray" FontSize="18" Width="260" Height="30" Margin="860,502,0,0" Grid.Row="2"><Run Text="Drumming Fingers"/></TextBlock>
+
+        <Button x:Name="saveButton" Style="{StaticResource SaveButtonStyle}" Content="Save" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="120" Height="35" Click="SaveButton_Click" Margin="150,0,0,30" Grid.Row="2" FontWeight="Medium" FontSize="16"/>
+        <Button x:Name="cancelButton" Style="{StaticResource CancelButtonStyle}" Content="Cancel" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="120" Height="35" Click="CancelButton_Click" Margin="0,0,150,30" Grid.Row="2" FontWeight="Medium" FontSize="16"/>
+
+    </Grid>
+
+</Window>
