@@ -1,0 +1,2 @@
+cd ..
+start MotionSense.exe

@@ -1,0 +1,132 @@
+JetBrains PyCharm Community Edition 2018.3.2
+C:\Program Files\JetBrains\PyCharm Community Edition 2018.3.2\bin\pycharm64.exe
+Math Input Panel
+C:\Program Files\Common Files\Microsoft Shared\Ink\mip.exe
+Steps Recorder
+C:\WINDOWS\system32\psr.exe
+Windows Media Player
+C:\Program Files (x86)\Windows Media Player\wmplayer.exe
+Documentation
+C:\WINDOWS\Installer\{086C537B-DE1A-4A11-8441-6AAF076174B8}\HLPIcon.exe
+Microsoft Azure Command Prompt - v2.9
+C:\Windows\System32\cmd.exe
+MotionSense
+C:\Program Files (x86)\MotionSense\MotionSense.exe
+Visual Studio 2017
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe
+WinRAR
+C:\Program Files (x86)\WinRAR\WinRAR.exe
+Disk Cleanup
+C:\WINDOWS\system32\cleanmgr.exe
+PuTTYgen
+C:\Program Files\PuTTY\puttygen.exe
+TeamViewer 13
+C:\Program Files (x86)\TeamViewer\TeamViewer.exe
+Publisher
+C:\Program Files (x86)\Microsoft Office\root\Office16\MSPUB.EXE
+Word
+C:\Program Files (x86)\Microsoft Office\root\Office16\WINWORD.EXE
+Debuggable Package Manager
+C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe
+Microsoft Azure Compute Emulator - v2.9
+C:\WINDOWS\Installer\{BB44C8F9-C555-45CF-B6DA-80131B139165}\DFIcon.exe
+Notepad++
+C:\Program Files (x86)\Notepad++\notepad++.exe
+Immersive Control Panel
+C:\WINDOWS\System32\Control.exe
+Outlook
+C:\Program Files (x86)\Microsoft Office\root\Office16\OUTLOOK.EXE
+Windows Fax and Scan
+C:\WINDOWS\system32\WFS.exe
+Samples
+C:\WINDOWS\Installer\{086C537B-DE1A-4A11-8441-6AAF076174B8}\WAIcon.exe
+Resource Monitor
+C:\WINDOWS\system32\perfmon.exe
+dfrgui
+C:\WINDOWS\system32\dfrgui.exe
+Jupyter Notebook
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Anaconda3_64\python.exe
+Skype for Business
+C:\Program Files (x86)\Microsoft Office\root\Office16\lync.exe
+Google Chrome
+C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+System Information
+C:\WINDOWS\system32\msinfo32.exe
+Database Compare
+C:\Program Files (x86)\Microsoft Office\root\Client\AppVLP.exe
+System Configuration
+C:\WINDOWS\system32\msconfig.exe
+Registry Editor
+C:\WINDOWS\regedit.exe
+Pageant
+C:\Program Files\PuTTY\pageant.exe
+Character Map
+C:\WINDOWS\system32\charmap.exe
+Task Manager
+C:\WINDOWS\system32\taskmgr.exe
+Blend for Visual Studio 2017
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Blend.exe
+Anaconda Prompt
+C:\WINDOWS\System32\cmd.exe
+Reset Spyder Settings
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Anaconda3_64\python.exe
+Visual Studio Installer
+C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe
+Paint
+C:\WINDOWS\system32\mspaint.exe
+Spreadsheet Compare
+C:\Program Files (x86)\Microsoft Office\root\Client\AppVLP.exe
+Excel
+C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE
+Wordpad
+C:\Program Files\Windows NT\Accessories\wordpad.exe
+PuTTY
+C:\Program Files\PuTTY\putty.exe
+iSCSI Initiator
+C:\WINDOWS\system32\iscsicpl.exe
+Windows App Cert Kit
+C:\Program Files (x86)\Windows Kits\10\App Certification Kit\appcertui.exe
+Memory Diagnostics Tool
+C:\WINDOWS\system32\MdSched.exe
+File Viewer Plus 3
+C:\Program Files (x86)\File Viewer Plus 3\fvp3.exe
+RecoveryDrive
+C:\WINDOWS\system32\RecoveryDrive.exe
+Windows Software Development Kit
+C:\WINDOWS\explorer.exe
+Office Upload Center
+C:\Program Files (x86)\Microsoft Office\root\Client\AppVLP.exe
+XAMPP Control Panel
+C:\xampp\xampp-control.exe
+Microsoft Azure HPC Scheduler SDK Content
+C:\WINDOWS\Installer\{086C537B-DE1A-4A11-8441-6AAF076174B8}\WAIcon.exe
+Microsoft Azure Storage Emulator - v5.7
+C:\WINDOWS\Installer\{20FA55A7-3612-46EB-A6EE-73FE4AAD174D}\AzureStorageEmulator.exe
+Snipping Tool
+C:\WINDOWS\system32\SnippingTool.exe
+PowerPoint
+C:\Program Files (x86)\Microsoft Office\root\Office16\POWERPNT.EXE
+Quick Assist
+C:\WINDOWS\system32\quickassist.exe
+Module Docs
+C:\WINDOWS\Installer\{16CD92A4-0152-4CB7-8FD6-9788D3363617}\python_icon.exe
+Speech Recognition
+C:\WINDOWS\Speech\Common\sapisvr.exe
+paint.net
+C:\Program Files\paint.net\PaintDotNet.exe
+Release Notes
+C:\WINDOWS\Installer\{086C537B-DE1A-4A11-8441-6AAF076174B8}\RELNIcon.exe
+Audio Controls
+C:\Program Files\CONEXANT\SA3\HP-NB-AIO\sacpl.exe
+Remote Desktop Connection
+C:\WINDOWS\system32\mstsc.exe
+Spyder
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Anaconda3_64\pythonw.exe
+PSFTP
+C:\Program Files\PuTTY\psftp.exe
+Anaconda Navigator
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Anaconda3_64\pythonw.exe
+Access
+C:\Program Files (x86)\Microsoft Office\root\Office16\MSACCESS.EXE
+Developer Command Prompt for VS 2017
+C:\Windows\System32\cmd.exe
